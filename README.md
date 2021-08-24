@@ -3,6 +3,7 @@ Work with Pixabay.com's API. Native JS.
 
 in future:
   - search params
-  - auto scroll page
-  - button "up"  
+  - auto scroll page instead od "load more" button
+  - button "up" - DONE
+  - autoscroll after "load more" - DONE
 
