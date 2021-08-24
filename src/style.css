@@ -1,11 +1,11 @@
 :root {
      --modal-overlay: rgb(84, 103, 145, 0.6);
- }
+}
 
 body {
      background: rgb(221, 229, 230);
      margin: 30px 0;
-     padding: 0;     
+     padding: 0;
 }
 /*
 .main-container {
@@ -26,7 +26,8 @@ body {
 #div-search-form {
      padding: 10px 15px 10px 15px;
      border-radius: 15px;
-     box-shadow: 5px -5px 10px rgb(174, 193, 196), -5px 5px 10px rgb(250, 250, 250);
+     box-shadow: 5px -5px 10px rgb(174, 193, 196),
+          -5px 5px 10px rgb(250, 250, 250);
 }
 
 #form-input {
@@ -40,38 +41,40 @@ body {
 */
 #all-images-container {
      margin: 30px 0 30px 0;
-     padding: 15px 0px 20px 0px;
+     padding: 15px 15px 20px 15px;
      border-radius: 25px;
      background-color: rgb(206, 219, 221);
-     box-shadow: 10px -10px 20px rgb(174, 193, 196), -10px 10px 20px rgb(250, 250, 250);
+     box-shadow: 10px -10px 20px rgb(174, 193, 196),
+          -10px 10px 20px rgb(250, 250, 250);
 }
 
 #item-container {
-     margin-top: 10px;
      display: flex;
      flex-direction: column;
      justify-content: center;
+     margin-top: 10px;
+     padding-left: 5px;
+     padding-right: 5px;
 }
 
 #img-container {
      display: flex;
      justify-self: center;
-    
 }
 
 #img-container img {
      cursor: pointer;
-     min-width: 100%;
+     width: 100%;
      height: auto;
      border-radius: 5px 5px 0 0;
-     border: thin double #DDE5E6;
+     border: thin double #dde5e6;
 }
 
 .img-footer-container {
      font-size: 11px;
      background-color: #bbc8ca;
      border-radius: 0 0 5px 5px;
-     border: thin double #DDE5E6;
+     border: thin double #dde5e6;
      border-width: 0px 1px 1px 1px;
      justify-self: flex-end;
 }
@@ -86,8 +89,6 @@ body {
      padding: 3px;
      background: none;
      border: none;
-     
-
 }
 /*     
 .load-more-button-container {
@@ -101,7 +102,8 @@ body {
 }
 
 #load-more-button {
-     box-shadow: 5px -5px 10px rgb(174, 193, 196), -5px 5px 10px rgb(250, 250, 250);
+     box-shadow: 5px -5px 10px rgb(174, 193, 196),
+          -5px 5px 10px rgb(250, 250, 250);
 }
 
 .modal-overlay {
@@ -112,26 +114,25 @@ body {
      bottom: 0;
      width: 100%;
      height: 100%;
- 
+
      display: flex;
      justify-content: center;
      align-items: center;
- 
+
      background-color: var(--modal-overlay);
      z-index: 1000;
      transition: 0.2s ease;
      opacity: 1;
- }
- 
+}
+
 .modal-overlay_hidden {
      top: 100%;
      opacity: 0;
- }
+}
 
-.modal-container{
+.modal-container {
      display: flex;
      flex-direction: column;
-         
 }
 
 .div-close-modal-button {
@@ -139,8 +140,8 @@ body {
      justify-content: flex-end;
      padding: 1px 5px 1px 0;
      width: 100%;
-     background-color: #DEE5E6;
-     border-radius: 10px 10px 0 0; 
+     background-color: #dee5e6;
+     border-radius: 10px 10px 0 0;
 }
 
 .image-modal {
@@ -150,6 +151,43 @@ body {
      border-radius: 0 0 10px 10px;
 }
 
- #close-button {
-      cursor: pointer;
- }
+#close-button {
+     cursor: pointer;
+}
+
+#to-top-button {
+     text-decoration: none;
+     display: inline-block;
+     background-color: #abc2c5;
+     width: 50px;
+     height: 50px;
+     text-align: center;
+     border-radius: 4px;
+     position: fixed;
+     bottom: 30px;
+     right: 30px;
+     transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+     opacity: 0;
+     visibility: hidden;
+     z-index: 1000;
+}
+#to-top-button::after {
+     content: "\f077";
+     font-family: FontAwesome;
+     font-weight: normal;
+     font-style: normal;
+     font-size: 2em;
+     line-height: 50px;
+     color: #fff;
+}
+#to-top-button:hover {
+     cursor: pointer;
+     background-color: #6c7a7c;
+}
+#to-top-button:active {
+     background-color: #555;
+}
+#to-top-button.show {
+     opacity: 1;
+     visibility: visible;
+}

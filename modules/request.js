@@ -9,7 +9,6 @@ export default class CreateRequest {
      async sendRequest() {
           this.url = `https://pixabay.com/api/?image_type=photo&orientation=horizontal&q=${this.request}&page=${this.pageNumber}&per_page=15&key=${this.api_key}`;
           this.incrementPageNumber();
-          // console.log(this.request, this.pageNumber, this.url)
           return fetch(this.url);
      }
 
