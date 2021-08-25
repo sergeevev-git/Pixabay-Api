@@ -39,13 +39,13 @@ export default class SearchForm {
                const allImagesContainer = document.querySelector(
                     "#all-images-container"
                );
-               const loadMoreForm = document.querySelector(
+               const divLoadMoreButton = document.querySelector(
                     "#div-load-more-button"
                );
 
-               if (allImagesContainer && loadMoreForm) {
+               if (allImagesContainer && divLoadMoreButton) {
                     allImagesContainer.remove();
-                    loadMoreForm.remove();
+                    divLoadMoreButton.remove();
                }
 
                const getImages = async () => {

@@ -90,12 +90,11 @@ body {
      background: none;
      border: none;
 }
-/*     
+
 .load-more-button-container {
-     margin: 20px 0 20px 0;
+     margin-bottom: 300px;
 }
 
-*/
 #div-load-more-button {
      display: flex;
      justify-content: center;
@@ -106,6 +105,13 @@ body {
           -5px 5px 10px rgb(250, 250, 250);
 }
 
+#load-more-button {
+}
+
+.hidden {
+     visibility: hidden;
+}
+
 .modal-overlay {
      position: fixed;
      left: 0;
@@ -114,11 +120,9 @@ body {
      bottom: 0;
      width: 100%;
      height: 100%;
-
      display: flex;
      justify-content: center;
      align-items: center;
-
      background-color: var(--modal-overlay);
      z-index: 1000;
      transition: 0.2s ease;
@@ -164,7 +168,7 @@ body {
      text-align: center;
      border-radius: 4px;
      position: fixed;
-     bottom: 30px;
+     bottom: 130px;
      right: 30px;
      transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
      opacity: 0;

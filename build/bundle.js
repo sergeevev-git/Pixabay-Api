@@ -29,7 +29,7 @@
        }
      }
 
-     var css = ":root {\r\n     --modal-overlay: rgb(84, 103, 145, 0.6);\r\n}\r\n\r\nbody {\r\n     background: rgb(221, 229, 230);\r\n     margin: 30px 0;\r\n     padding: 0;\r\n}\r\n/*\r\n.main-container {\r\n     display: flex;\r\n     flex-direction: column;\r\n     justify-content: flex-start;\r\n     align-items: center;\r\n     margin: 0 auto;\r\n     padding: 0 10% 0 10%;\r\n\r\n}\r\n*/\r\n.search-form-container {\r\n     display: flex;\r\n     justify-content: center;\r\n}\r\n\r\n#div-search-form {\r\n     padding: 10px 15px 10px 15px;\r\n     border-radius: 15px;\r\n     box-shadow: 5px -5px 10px rgb(174, 193, 196),\r\n          -5px 5px 10px rgb(250, 250, 250);\r\n}\r\n\r\n#form-input {\r\n     background-color: #f1fafc;\r\n}\r\n/*\r\n.gallery-container {\r\n     margin: 20px 0 20px 0;\r\n     max-width: 90vw;\r\n}\r\n*/\r\n#all-images-container {\r\n     margin: 30px 0 30px 0;\r\n     padding: 15px 15px 20px 15px;\r\n     border-radius: 25px;\r\n     background-color: rgb(206, 219, 221);\r\n     box-shadow: 10px -10px 20px rgb(174, 193, 196),\r\n          -10px 10px 20px rgb(250, 250, 250);\r\n}\r\n\r\n#item-container {\r\n     display: flex;\r\n     flex-direction: column;\r\n     justify-content: center;\r\n     margin-top: 10px;\r\n     padding-left: 5px;\r\n     padding-right: 5px;\r\n}\r\n\r\n#img-container {\r\n     display: flex;\r\n     justify-self: center;\r\n}\r\n\r\n#img-container img {\r\n     cursor: pointer;\r\n     width: 100%;\r\n     height: auto;\r\n     border-radius: 5px 5px 0 0;\r\n     border: thin double #dde5e6;\r\n}\r\n\r\n.img-footer-container {\r\n     font-size: 11px;\r\n     background-color: #bbc8ca;\r\n     border-radius: 0 0 5px 5px;\r\n     border: thin double #dde5e6;\r\n     border-width: 0px 1px 1px 1px;\r\n     justify-self: flex-end;\r\n}\r\n\r\n#image-attributes {\r\n     display: flex;\r\n     flex-direction: row;\r\n     flex-wrap: wrap;\r\n     justify-content: flex-start;\r\n     align-items: center;\r\n     margin: 0 auto;\r\n     padding: 3px;\r\n     background: none;\r\n     border: none;\r\n}\r\n/*     \r\n.load-more-button-container {\r\n     margin: 20px 0 20px 0;\r\n}\r\n\r\n*/\r\n#div-load-more-button {\r\n     display: flex;\r\n     justify-content: center;\r\n}\r\n\r\n#load-more-button {\r\n     box-shadow: 5px -5px 10px rgb(174, 193, 196),\r\n          -5px 5px 10px rgb(250, 250, 250);\r\n}\r\n\r\n.modal-overlay {\r\n     position: fixed;\r\n     left: 0;\r\n     right: 0;\r\n     top: 0;\r\n     bottom: 0;\r\n     width: 100%;\r\n     height: 100%;\r\n\r\n     display: flex;\r\n     justify-content: center;\r\n     align-items: center;\r\n\r\n     background-color: var(--modal-overlay);\r\n     z-index: 1000;\r\n     transition: 0.2s ease;\r\n     opacity: 1;\r\n}\r\n\r\n.modal-overlay_hidden {\r\n     top: 100%;\r\n     opacity: 0;\r\n}\r\n\r\n.modal-container {\r\n     display: flex;\r\n     flex-direction: column;\r\n}\r\n\r\n.div-close-modal-button {\r\n     display: flex;\r\n     justify-content: flex-end;\r\n     padding: 1px 5px 1px 0;\r\n     width: 100%;\r\n     background-color: #dee5e6;\r\n     border-radius: 10px 10px 0 0;\r\n}\r\n\r\n.image-modal {\r\n     max-height: 40vw;\r\n     padding: 5px;\r\n     background-color: white;\r\n     border-radius: 0 0 10px 10px;\r\n}\r\n\r\n#close-button {\r\n     cursor: pointer;\r\n}\r\n\r\n#to-top-button {\r\n     text-decoration: none;\r\n     display: inline-block;\r\n     background-color: #abc2c5;\r\n     width: 50px;\r\n     height: 50px;\r\n     text-align: center;\r\n     border-radius: 4px;\r\n     position: fixed;\r\n     bottom: 30px;\r\n     right: 30px;\r\n     transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;\r\n     opacity: 0;\r\n     visibility: hidden;\r\n     z-index: 1000;\r\n}\r\n#to-top-button::after {\r\n     content: \"\\f077\";\r\n     font-family: FontAwesome;\r\n     font-weight: normal;\r\n     font-style: normal;\r\n     font-size: 2em;\r\n     line-height: 50px;\r\n     color: #fff;\r\n}\r\n#to-top-button:hover {\r\n     cursor: pointer;\r\n     background-color: #6c7a7c;\r\n}\r\n#to-top-button:active {\r\n     background-color: #555;\r\n}\r\n#to-top-button.show {\r\n     opacity: 1;\r\n     visibility: visible;\r\n}\r\n";
+     var css = ":root {\r\n     --modal-overlay: rgb(84, 103, 145, 0.6);\r\n}\r\n\r\nbody {\r\n     background: rgb(221, 229, 230);\r\n     margin: 30px 0;\r\n     padding: 0;\r\n}\r\n/*\r\n.main-container {\r\n     display: flex;\r\n     flex-direction: column;\r\n     justify-content: flex-start;\r\n     align-items: center;\r\n     margin: 0 auto;\r\n     padding: 0 10% 0 10%;\r\n\r\n}\r\n*/\r\n.search-form-container {\r\n     display: flex;\r\n     justify-content: center;\r\n}\r\n\r\n#div-search-form {\r\n     padding: 10px 15px 10px 15px;\r\n     border-radius: 15px;\r\n     box-shadow: 5px -5px 10px rgb(174, 193, 196),\r\n          -5px 5px 10px rgb(250, 250, 250);\r\n}\r\n\r\n#form-input {\r\n     background-color: #f1fafc;\r\n}\r\n/*\r\n.gallery-container {\r\n     margin: 20px 0 20px 0;\r\n     max-width: 90vw;\r\n}\r\n*/\r\n#all-images-container {\r\n     margin: 30px 0 30px 0;\r\n     padding: 15px 15px 20px 15px;\r\n     border-radius: 25px;\r\n     background-color: rgb(206, 219, 221);\r\n     box-shadow: 10px -10px 20px rgb(174, 193, 196),\r\n          -10px 10px 20px rgb(250, 250, 250);\r\n}\r\n\r\n#item-container {\r\n     display: flex;\r\n     flex-direction: column;\r\n     justify-content: center;\r\n     margin-top: 10px;\r\n     padding-left: 5px;\r\n     padding-right: 5px;\r\n}\r\n\r\n#img-container {\r\n     display: flex;\r\n     justify-self: center;\r\n}\r\n\r\n#img-container img {\r\n     cursor: pointer;\r\n     width: 100%;\r\n     height: auto;\r\n     border-radius: 5px 5px 0 0;\r\n     border: thin double #dde5e6;\r\n}\r\n\r\n.img-footer-container {\r\n     font-size: 11px;\r\n     background-color: #bbc8ca;\r\n     border-radius: 0 0 5px 5px;\r\n     border: thin double #dde5e6;\r\n     border-width: 0px 1px 1px 1px;\r\n     justify-self: flex-end;\r\n}\r\n\r\n#image-attributes {\r\n     display: flex;\r\n     flex-direction: row;\r\n     flex-wrap: wrap;\r\n     justify-content: flex-start;\r\n     align-items: center;\r\n     margin: 0 auto;\r\n     padding: 3px;\r\n     background: none;\r\n     border: none;\r\n}\r\n\r\n.load-more-button-container {\r\n     margin-bottom: 300px;\r\n}\r\n\r\n#div-load-more-button {\r\n     display: flex;\r\n     justify-content: center;\r\n}\r\n\r\n#load-more-button {\r\n     box-shadow: 5px -5px 10px rgb(174, 193, 196),\r\n          -5px 5px 10px rgb(250, 250, 250);\r\n}\r\n\r\n#load-more-button {\r\n}\r\n\r\n.hidden {\r\n     visibility: hidden;\r\n}\r\n\r\n.modal-overlay {\r\n     position: fixed;\r\n     left: 0;\r\n     right: 0;\r\n     top: 0;\r\n     bottom: 0;\r\n     width: 100%;\r\n     height: 100%;\r\n     display: flex;\r\n     justify-content: center;\r\n     align-items: center;\r\n     background-color: var(--modal-overlay);\r\n     z-index: 1000;\r\n     transition: 0.2s ease;\r\n     opacity: 1;\r\n}\r\n\r\n.modal-overlay_hidden {\r\n     top: 100%;\r\n     opacity: 0;\r\n}\r\n\r\n.modal-container {\r\n     display: flex;\r\n     flex-direction: column;\r\n}\r\n\r\n.div-close-modal-button {\r\n     display: flex;\r\n     justify-content: flex-end;\r\n     padding: 1px 5px 1px 0;\r\n     width: 100%;\r\n     background-color: #dee5e6;\r\n     border-radius: 10px 10px 0 0;\r\n}\r\n\r\n.image-modal {\r\n     max-height: 40vw;\r\n     padding: 5px;\r\n     background-color: white;\r\n     border-radius: 0 0 10px 10px;\r\n}\r\n\r\n#close-button {\r\n     cursor: pointer;\r\n}\r\n\r\n#to-top-button {\r\n     text-decoration: none;\r\n     display: inline-block;\r\n     background-color: #abc2c5;\r\n     width: 50px;\r\n     height: 50px;\r\n     text-align: center;\r\n     border-radius: 4px;\r\n     position: fixed;\r\n     bottom: 130px;\r\n     right: 30px;\r\n     transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;\r\n     opacity: 0;\r\n     visibility: hidden;\r\n     z-index: 1000;\r\n}\r\n#to-top-button::after {\r\n     content: \"\\f077\";\r\n     font-family: FontAwesome;\r\n     font-weight: normal;\r\n     font-style: normal;\r\n     font-size: 2em;\r\n     line-height: 50px;\r\n     color: #fff;\r\n}\r\n#to-top-button:hover {\r\n     cursor: pointer;\r\n     background-color: #6c7a7c;\r\n}\r\n#to-top-button:active {\r\n     background-color: #555;\r\n}\r\n#to-top-button.show {\r\n     opacity: 1;\r\n     visibility: visible;\r\n}\r\n";
      n(css,{});
 
      const createElement = (tag, className = "", id = className) => {
@@ -62,11 +62,11 @@
          searchForm.addEventListener("submit", event => {
            event.preventDefault();
            const allImagesContainer = document.querySelector("#all-images-container");
-           const loadMoreForm = document.querySelector("#div-load-more-button");
+           const divLoadMoreButton = document.querySelector("#div-load-more-button");
 
-           if (allImagesContainer && loadMoreForm) {
+           if (allImagesContainer && divLoadMoreButton) {
              allImagesContainer.remove();
-             loadMoreForm.remove();
+             divLoadMoreButton.remove();
            }
 
            const getImages = async () => {
@@ -202,6 +202,34 @@
          const loadMoreButton = createElement("button", "btn btn-outline-success btn-lg", "load-more-button");
          loadMoreButton.type = "submit";
          loadMoreButton.textContent = "more...";
+         window.addEventListener("scroll", () => {
+           let limitOfFetch = 1;
+           console.log(limitOfFetch);
+           let windowRelativeBottom = document.documentElement.getBoundingClientRect().bottom;
+
+           if (windowRelativeBottom < document.documentElement.clientHeight + 10 && limitOfFetch === 1) {
+             limitOfFetch = 0;
+             console.log(limitOfFetch);
+
+             const getMoreImages = async () => {
+               try {
+                 const response = await this.loadMoreImages();
+
+                 if (!response.ok) {
+                   throw new Error("Ошибка получения данных");
+                 }
+
+                 let result = await response.json();
+                 result = await [...result.hits];
+                 this.renderMoreGallery(result);
+               } catch (error) {
+                 console.log("error:", error);
+               }
+             };
+
+             getMoreImages();
+           }
+         });
          loadMoreButton.addEventListener("click", () => {
            const getMoreImages = async () => {
              try {
@@ -219,7 +247,7 @@
              } finally {
                setTimeout(() => {
                  window.scrollTo({
-                   top: document.body.scrollHeight,
+                   top: document.body.scrollHeight + 300,
                    behavior: "smooth"
                  });
                }, 200);
@@ -227,6 +255,7 @@
            };
 
            getMoreImages();
+           divLoadMoreButton.classList.add("hidden");
          });
          divLoadMoreButton.append(loadMoreButton);
          this.#container.append(divLoadMoreButton);
