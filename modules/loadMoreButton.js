@@ -27,22 +27,25 @@ export default class LoadMoreButton {
           loadMoreButton.type = "submit";
           loadMoreButton.textContent = "more...";
 
+          const spanNoMorePictures = Utils.createElement(
+               "span",
+               "no-more-pictures"
+          );
+          spanNoMorePictures.innerHTML = "there are no more pictures... :(";
+          spanNoMorePictures.classList.add("hidden");
+
           window.addEventListener("scroll", () => {
-               let limitOfFetch = 1;
-               console.log(limitOfFetch);
                let windowRelativeBottom =
                     document.documentElement.getBoundingClientRect().bottom;
 
                if (
                     windowRelativeBottom <
-                         document.documentElement.clientHeight + 10 &&
-                    limitOfFetch === 1
+                    document.documentElement.clientHeight + 10
                ) {
-                    limitOfFetch = 0;
-                    console.log(limitOfFetch);
-                    const getMoreImages = async () => {
+                    const infiniteScroll = async () => {
                          try {
                               const response = await this.loadMoreImages();
+                              console.log(response);
                               if (!response.ok) {
                                    throw new Error("Ошибка получения данных");
                               }
@@ -50,10 +53,14 @@ export default class LoadMoreButton {
                               result = await [...result.hits];
                               this.renderMoreGallery(result);
                          } catch (error) {
-                              console.log("error:", error);
+                              // console.log("error:", error);
+                              if (loadMoreButton) {
+                                   loadMoreButton.remove();
+                              }
+                              spanNoMorePictures.classList.remove("hidden");
                          }
                     };
-                    getMoreImages();
+                    infiniteScroll();
                }
           });
 
@@ -79,10 +86,11 @@ export default class LoadMoreButton {
                     }
                };
                getMoreImages();
-               divLoadMoreButton.classList.add("hidden");
+               loadMoreButton.remove();
           });
 
           divLoadMoreButton.append(loadMoreButton);
+          divLoadMoreButton.append(spanNoMorePictures);
           this.#container.append(divLoadMoreButton);
 
           return this.#container;

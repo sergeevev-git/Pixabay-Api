@@ -29,7 +29,7 @@
        }
      }
 
-     var css = ":root {\r\n     --modal-overlay: rgb(84, 103, 145, 0.6);\r\n}\r\n\r\nbody {\r\n     background: rgb(221, 229, 230);\r\n     margin: 30px 0;\r\n     padding: 0;\r\n}\r\n/*\r\n.main-container {\r\n     display: flex;\r\n     flex-direction: column;\r\n     justify-content: flex-start;\r\n     align-items: center;\r\n     margin: 0 auto;\r\n     padding: 0 10% 0 10%;\r\n\r\n}\r\n*/\r\n.search-form-container {\r\n     display: flex;\r\n     justify-content: center;\r\n}\r\n\r\n#div-search-form {\r\n     padding: 10px 15px 10px 15px;\r\n     border-radius: 15px;\r\n     box-shadow: 5px -5px 10px rgb(174, 193, 196),\r\n          -5px 5px 10px rgb(250, 250, 250);\r\n}\r\n\r\n#form-input {\r\n     background-color: #f1fafc;\r\n}\r\n/*\r\n.gallery-container {\r\n     margin: 20px 0 20px 0;\r\n     max-width: 90vw;\r\n}\r\n*/\r\n#all-images-container {\r\n     margin: 30px 0 30px 0;\r\n     padding: 15px 15px 20px 15px;\r\n     border-radius: 25px;\r\n     background-color: rgb(206, 219, 221);\r\n     box-shadow: 10px -10px 20px rgb(174, 193, 196),\r\n          -10px 10px 20px rgb(250, 250, 250);\r\n}\r\n\r\n#item-container {\r\n     display: flex;\r\n     flex-direction: column;\r\n     justify-content: center;\r\n     margin-top: 10px;\r\n     padding-left: 5px;\r\n     padding-right: 5px;\r\n}\r\n\r\n#img-container {\r\n     display: flex;\r\n     justify-self: center;\r\n}\r\n\r\n#img-container img {\r\n     cursor: pointer;\r\n     width: 100%;\r\n     height: auto;\r\n     border-radius: 5px 5px 0 0;\r\n     border: thin double #dde5e6;\r\n}\r\n\r\n.img-footer-container {\r\n     font-size: 11px;\r\n     background-color: #bbc8ca;\r\n     border-radius: 0 0 5px 5px;\r\n     border: thin double #dde5e6;\r\n     border-width: 0px 1px 1px 1px;\r\n     justify-self: flex-end;\r\n}\r\n\r\n#image-attributes {\r\n     display: flex;\r\n     flex-direction: row;\r\n     flex-wrap: wrap;\r\n     justify-content: flex-start;\r\n     align-items: center;\r\n     margin: 0 auto;\r\n     padding: 3px;\r\n     background: none;\r\n     border: none;\r\n}\r\n\r\n.load-more-button-container {\r\n     margin-bottom: 300px;\r\n}\r\n\r\n#div-load-more-button {\r\n     display: flex;\r\n     justify-content: center;\r\n}\r\n\r\n#load-more-button {\r\n     box-shadow: 5px -5px 10px rgb(174, 193, 196),\r\n          -5px 5px 10px rgb(250, 250, 250);\r\n}\r\n\r\n#load-more-button {\r\n}\r\n\r\n.hidden {\r\n     visibility: hidden;\r\n}\r\n\r\n.modal-overlay {\r\n     position: fixed;\r\n     left: 0;\r\n     right: 0;\r\n     top: 0;\r\n     bottom: 0;\r\n     width: 100%;\r\n     height: 100%;\r\n     display: flex;\r\n     justify-content: center;\r\n     align-items: center;\r\n     background-color: var(--modal-overlay);\r\n     z-index: 1000;\r\n     transition: 0.2s ease;\r\n     opacity: 1;\r\n}\r\n\r\n.modal-overlay_hidden {\r\n     top: 100%;\r\n     opacity: 0;\r\n}\r\n\r\n.modal-container {\r\n     display: flex;\r\n     flex-direction: column;\r\n}\r\n\r\n.div-close-modal-button {\r\n     display: flex;\r\n     justify-content: flex-end;\r\n     padding: 1px 5px 1px 0;\r\n     width: 100%;\r\n     background-color: #dee5e6;\r\n     border-radius: 10px 10px 0 0;\r\n}\r\n\r\n.image-modal {\r\n     max-height: 40vw;\r\n     padding: 5px;\r\n     background-color: white;\r\n     border-radius: 0 0 10px 10px;\r\n}\r\n\r\n#close-button {\r\n     cursor: pointer;\r\n}\r\n\r\n#to-top-button {\r\n     text-decoration: none;\r\n     display: inline-block;\r\n     background-color: #abc2c5;\r\n     width: 50px;\r\n     height: 50px;\r\n     text-align: center;\r\n     border-radius: 4px;\r\n     position: fixed;\r\n     bottom: 130px;\r\n     right: 30px;\r\n     transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;\r\n     opacity: 0;\r\n     visibility: hidden;\r\n     z-index: 1000;\r\n}\r\n#to-top-button::after {\r\n     content: \"\\f077\";\r\n     font-family: FontAwesome;\r\n     font-weight: normal;\r\n     font-style: normal;\r\n     font-size: 2em;\r\n     line-height: 50px;\r\n     color: #fff;\r\n}\r\n#to-top-button:hover {\r\n     cursor: pointer;\r\n     background-color: #6c7a7c;\r\n}\r\n#to-top-button:active {\r\n     background-color: #555;\r\n}\r\n#to-top-button.show {\r\n     opacity: 1;\r\n     visibility: visible;\r\n}\r\n";
+     var css = ":root {\r\n     --modal-overlay: rgb(84, 103, 145, 0.6);\r\n}\r\n\r\nbody {\r\n     background: rgb(221, 229, 230);\r\n     margin-top: 30px;\r\n     margin-bottom: 150px;\r\n     padding: 0;\r\n}\r\n/*\r\n.main-container {\r\n     display: flex;\r\n     flex-direction: column;\r\n     justify-content: flex-start;\r\n     align-items: center;\r\n     margin: 0 auto;\r\n     padding: 0 10% 0 10%;\r\n\r\n}\r\n*/\r\n.search-form-container {\r\n     display: flex;\r\n     justify-content: center;\r\n}\r\n\r\n#div-search-form {\r\n     padding: 10px 15px 10px 15px;\r\n     border-radius: 15px;\r\n     box-shadow: 5px -5px 10px rgb(174, 193, 196),\r\n          -5px 5px 10px rgb(250, 250, 250);\r\n}\r\n\r\n#form-input {\r\n     background-color: #f1fafc;\r\n}\r\n\r\n#div-options-form {\r\n     padding: 10px 15px 10px 15px;\r\n     border-radius: 15px;\r\n     box-shadow: 5px -5px 10px rgb(174, 193, 196),\r\n          -5px 5px 10px rgb(250, 250, 250);\r\n}\r\n/*\r\n.gallery-container {\r\n     margin: 20px 0 20px 0;\r\n     max-width: 90vw;\r\n}\r\n*/\r\n#all-images-container {\r\n     margin: 30px 0 30px 0;\r\n     padding: 15px 15px 20px 15px;\r\n     border-radius: 25px;\r\n     background-color: rgb(206, 219, 221);\r\n     box-shadow: 10px -10px 20px rgb(174, 193, 196),\r\n          -10px 10px 20px rgb(250, 250, 250);\r\n}\r\n\r\n#item-container {\r\n     display: flex;\r\n     flex-direction: column;\r\n     justify-content: center;\r\n     margin-top: 10px;\r\n     padding-left: 5px;\r\n     padding-right: 5px;\r\n}\r\n\r\n#img-container {\r\n     display: flex;\r\n     justify-content: center;\r\n     justify-self: center;\r\n}\r\n\r\n#img-container img {\r\n     cursor: pointer;\r\n     width: 100%;\r\n     height: auto;\r\n     border-radius: 5px 5px 0 0;\r\n     border: thin double #dde5e6;\r\n}\r\n\r\n.img-footer-container {\r\n     font-size: 11px;\r\n     background-color: #bbc8ca;\r\n     border-radius: 0 0 5px 5px;\r\n     border: thin double #dde5e6;\r\n     border-width: 0px 1px 1px 1px;\r\n     justify-self: flex-end;\r\n}\r\n\r\n#image-attributes {\r\n     display: flex;\r\n     flex-direction: row;\r\n     flex-wrap: wrap;\r\n     justify-content: flex-start;\r\n     align-items: center;\r\n     margin: 0 auto;\r\n     padding: 3px;\r\n     background: none;\r\n     border: none;\r\n}\r\n\r\n.load-more-button-container {\r\n}\r\n\r\n#div-load-more-button {\r\n     display: flex;\r\n     flex-direction: column;\r\n     justify-content: center;\r\n}\r\n\r\n#load-more-button {\r\n     max-width: 10%;\r\n     align-self: center;\r\n     box-shadow: 5px -5px 10px rgb(174, 193, 196),\r\n          -5px 5px 10px rgb(250, 250, 250);\r\n}\r\n\r\n#load-more-button {\r\n}\r\n\r\n#no-more-pictures {\r\n     align-self: center;\r\n     color: cadetblue;\r\n     font-size: 18px;\r\n     font-weight: 600;\r\n}\r\n\r\n.hidden {\r\n     visibility: hidden;\r\n}\r\n\r\n.modal-overlay {\r\n     position: fixed;\r\n     left: 0;\r\n     right: 0;\r\n     top: 0;\r\n     bottom: 0;\r\n     width: 100%;\r\n     height: 100%;\r\n     display: flex;\r\n     justify-content: center;\r\n     align-items: center;\r\n     background-color: var(--modal-overlay);\r\n     z-index: 1000;\r\n     transition: 0.2s ease;\r\n     opacity: 1;\r\n}\r\n\r\n.modal-overlay_hidden {\r\n     top: 100%;\r\n     opacity: 0;\r\n}\r\n\r\n.modal-container {\r\n     display: flex;\r\n     flex-direction: column;\r\n}\r\n\r\n.div-close-modal-button {\r\n     display: flex;\r\n     justify-content: flex-end;\r\n     padding: 1px 5px 1px 0;\r\n     width: 100%;\r\n     background-color: #dee5e6;\r\n     border-radius: 10px 10px 0 0;\r\n}\r\n\r\n.image-modal {\r\n     max-height: 40vw;\r\n     padding: 5px;\r\n     background-color: white;\r\n     border-radius: 0 0 10px 10px;\r\n}\r\n\r\n#close-button {\r\n     cursor: pointer;\r\n}\r\n\r\n#to-top-button {\r\n     text-decoration: none;\r\n     display: inline-block;\r\n     background-color: #abc2c5;\r\n     width: 50px;\r\n     height: 50px;\r\n     text-align: center;\r\n     border-radius: 4px;\r\n     position: fixed;\r\n     bottom: 130px;\r\n     right: 30px;\r\n     transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;\r\n     opacity: 0;\r\n     visibility: hidden;\r\n     z-index: 1000;\r\n}\r\n#to-top-button::after {\r\n     content: \"\\f077\";\r\n     font-family: FontAwesome;\r\n     font-weight: normal;\r\n     font-style: normal;\r\n     font-size: 2em;\r\n     line-height: 50px;\r\n     color: #fff;\r\n}\r\n#to-top-button:hover {\r\n     cursor: pointer;\r\n     background-color: #6c7a7c;\r\n}\r\n#to-top-button:active {\r\n     background-color: #555;\r\n}\r\n#to-top-button.show {\r\n     opacity: 1;\r\n     visibility: visible;\r\n}\r\n";
      n(css,{});
 
      const createElement = (tag, className = "", id = className) => {
@@ -99,6 +99,41 @@
 
      }
 
+     class OptonsForm {
+       #container;
+
+       constructor() {
+         this.#container = createElement("div", "options-form-container");
+       }
+
+       render() {
+         const divOptonsForm = createElement("div", "div-options-form");
+         const optonsForm = createElement("form", "row", "options-form");
+         const divIFormCheckHorizontal = createElement("div", "form-check");
+         const orientationChckboxHorizontal = createElement("input", "form-check-input", "horizontal");
+         orientationChckboxHorizontal.type = "checkbox";
+         const labelChckboxHorizontal = createElement("label", "form-check-label");
+         labelChckboxHorizontal.htmlFor = "horizontal";
+         labelChckboxHorizontal.textContent = "horizontal";
+         const divIFormCheckVertical = createElement("div", "form-check");
+         const orientationChckboxVertical = createElement("input", "form-check-input", "vertical");
+         orientationChckboxVertical.type = "checkbox";
+         const labelChckboxVertical = createElement("label", "form-check-label");
+         labelChckboxVertical.htmlFor = "vertical";
+         labelChckboxVertical.textContent = "vertical";
+         divOptonsForm.append(optonsForm);
+         optonsForm.append(divIFormCheckHorizontal);
+         optonsForm.append(divIFormCheckVertical);
+         divIFormCheckHorizontal.append(orientationChckboxHorizontal);
+         divIFormCheckHorizontal.append(labelChckboxHorizontal);
+         divIFormCheckVertical.append(orientationChckboxVertical);
+         divIFormCheckVertical.append(labelChckboxVertical);
+         this.#container.append(divOptonsForm);
+         return this.#container;
+       }
+
+     }
+
      class Gallery {
        #container;
 
@@ -138,10 +173,23 @@
          const itemContainer = createElement("div", "item-container");
          const imgContainer = createElement("div", "img-container");
          const imgFooterContainer = createElement("div", "img-footer-container");
+         const divSpinner = createElement("div", "spinner-border");
+         divSpinner.role = "status";
+         const spanSpinner = createElement("span", "sr-only");
          const imageItem = createElement("img", "image");
          imageItem.src = item.webformatURL;
          imageItem.dataset.fullSizeImg = item.largeImageURL;
          imageItem.title = item.tags;
+
+         imageItem.onload = function () {
+           divSpinner.remove();
+           imgContainer.append(imageItem);
+         };
+
+         imageItem.onerror = function () {
+           console.log("waiting...");
+         };
+
          const imageAttributes = createElement("ul", "list-group list-group-horizontal");
          const imageLikes = createElement("li", "list-group-item", "image-attributes");
          imageLikes.innerHTML = `<i class="bi bi-heart"> ${item.likes}</i>`;
@@ -152,7 +200,8 @@
          const imageDownloads = createElement("li", "list-group-item", "image-attributes");
          imageDownloads.innerHTML = `<i class="bi bi-cloud-arrow-down"> ${item.downloads}</i>`;
          itemContainer.append(imgContainer, imgFooterContainer);
-         imgContainer.append(imageItem);
+         divSpinner.append(spanSpinner);
+         imgContainer.append(divSpinner);
          imageAttributes.append(imageLikes, imageComments, imageViews, imageDownloads);
          imgFooterContainer.append(imageAttributes);
          return itemContainer;
@@ -202,18 +251,17 @@
          const loadMoreButton = createElement("button", "btn btn-outline-success btn-lg", "load-more-button");
          loadMoreButton.type = "submit";
          loadMoreButton.textContent = "more...";
+         const spanNoMorePictures = createElement("span", "no-more-pictures");
+         spanNoMorePictures.innerHTML = "there are no more pictures... :(";
+         spanNoMorePictures.classList.add("hidden");
          window.addEventListener("scroll", () => {
-           let limitOfFetch = 1;
-           console.log(limitOfFetch);
            let windowRelativeBottom = document.documentElement.getBoundingClientRect().bottom;
 
-           if (windowRelativeBottom < document.documentElement.clientHeight + 10 && limitOfFetch === 1) {
-             limitOfFetch = 0;
-             console.log(limitOfFetch);
-
-             const getMoreImages = async () => {
+           if (windowRelativeBottom < document.documentElement.clientHeight + 10) {
+             const infiniteScroll = async () => {
                try {
                  const response = await this.loadMoreImages();
+                 console.log(response);
 
                  if (!response.ok) {
                    throw new Error("Ошибка получения данных");
@@ -223,11 +271,16 @@
                  result = await [...result.hits];
                  this.renderMoreGallery(result);
                } catch (error) {
-                 console.log("error:", error);
+                 // console.log("error:", error);
+                 if (loadMoreButton) {
+                   loadMoreButton.remove();
+                 }
+
+                 spanNoMorePictures.classList.remove("hidden");
                }
              };
 
-             getMoreImages();
+             infiniteScroll();
            }
          });
          loadMoreButton.addEventListener("click", () => {
@@ -255,9 +308,10 @@
            };
 
            getMoreImages();
-           divLoadMoreButton.classList.add("hidden");
+           loadMoreButton.remove();
          });
          divLoadMoreButton.append(loadMoreButton);
+         divLoadMoreButton.append(spanNoMorePictures);
          this.#container.append(divLoadMoreButton);
          return this.#container;
        }
@@ -336,6 +390,7 @@
        constructor() {
          this.#mainContainer = createElement("div", "container");
          this.searchForm = new SearchForm(this.createNewrequest.bind(this), this.renderGallery.bind(this));
+         this.optionForm = new OptonsForm();
          this.gallery = new Gallery(this.showModal.bind(this));
          this.request = new CreateRequest();
          this.loadMoreButton = new LoadMoreButton(this.loadMoreImages.bind(this), this.renderMoreGallery.bind(this));
@@ -347,6 +402,7 @@
          document.body.append(this.#mainContainer);
          this.#mainContainer.append(this.toTopButton.render());
          this.#mainContainer.append(this.searchForm.render());
+         this.#mainContainer.append(this.optionForm.render());
          this.#mainContainer.append(this.modalWindow.render());
        }
 

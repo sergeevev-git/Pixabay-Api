@@ -1,8 +1,7 @@
-import '../src/style.css'
+import "../src/style.css";
 
-import App from '../modules/app'
+import App from "../modules/app";
 
-const app = new App()
+const app = new App();
 
-app.run()
-
+app.run();

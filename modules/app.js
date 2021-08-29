@@ -1,4 +1,5 @@
 import SearchForm from "./searchForm";
+import OptonsForm from "./optonsFrom";
 import Gallery from "./gallery";
 import Request from "./request";
 import LoadMoreButton from "./loadMoreButton";
@@ -16,6 +17,7 @@ export default class App {
                this.createNewrequest.bind(this),
                this.renderGallery.bind(this)
           );
+          this.optionForm = new OptonsForm();
           this.gallery = new Gallery(this.showModal.bind(this));
           this.request = new Request();
           this.loadMoreButton = new LoadMoreButton(
@@ -30,6 +32,7 @@ export default class App {
           document.body.append(this.#mainContainer);
           this.#mainContainer.append(this.toTopButton.render());
           this.#mainContainer.append(this.searchForm.render());
+          this.#mainContainer.append(this.optionForm.render());
           this.#mainContainer.append(this.modalWindow.render());
      }
 

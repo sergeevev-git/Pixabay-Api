@@ -53,10 +53,22 @@ export default class Gallery {
                "img-footer-container"
           );
 
+          const divSpinner = Utils.createElement("div", "spinner-border");
+          divSpinner.role = "status";
+
+          const spanSpinner = Utils.createElement("span", "sr-only");
+
           const imageItem = Utils.createElement("img", "image");
           imageItem.src = item.webformatURL;
           imageItem.dataset.fullSizeImg = item.largeImageURL;
           imageItem.title = item.tags;
+          imageItem.onload = function () {
+               divSpinner.remove();
+               imgContainer.append(imageItem);
+          };
+          imageItem.onerror = function () {
+               console.log("waiting...");
+          };
 
           const imageAttributes = Utils.createElement(
                "ul",
@@ -92,7 +104,8 @@ export default class Gallery {
           imageDownloads.innerHTML = `<i class="bi bi-cloud-arrow-down"> ${item.downloads}</i>`;
 
           itemContainer.append(imgContainer, imgFooterContainer);
-          imgContainer.append(imageItem);
+          divSpinner.append(spanSpinner);
+          imgContainer.append(divSpinner);
           imageAttributes.append(
                imageLikes,
                imageComments,
